@@ -1,0 +1,2 @@
+Under eclipse, before build a signed app, disable automatic build, clean workspace (without rebuild) and create signed app
+If not, there is the message : "Conversion to Dalvik format failed with error 1"
