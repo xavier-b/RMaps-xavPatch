@@ -6,11 +6,13 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
+import android.view.View.OnClickListener;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -27,6 +29,15 @@ public class PoiCategoryListActivity extends ListActivity {
 		setContentView(R.layout.poicategory_list);
         registerForContextMenu(getListView());
         mPoiManager = new PoiManager(this);
+        
+        // Patch Xav : Add a button for open menu option
+		((Button) findViewById(R.id.xavPoiCategoryMenuButton))
+		.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				(PoiCategoryListActivity.this).openOptionsMenu();
+			}
+		});
+		// End of Patch Xav
 	}
 
 	@Override

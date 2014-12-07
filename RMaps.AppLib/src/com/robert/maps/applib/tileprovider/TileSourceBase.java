@@ -176,6 +176,13 @@ public class TileSourceBase {
 			this.ID = mixMapId;
 		}
 		
+		// Patch xav
+		// We scale with density screen
+		double xavDensity = ctx.getResources().getDisplayMetrics().density;
+		this.MAPTILE_SIZE_FACTOR = this.MAPTILE_SIZE_FACTOR * xavDensity;
+		this.MAPTILE_SIZEPX =  (int)((double)this.MAPTILE_SIZEPX * xavDensity);
+		// End of patch xav
+		
 		if(MAPID == null)
 			throw new RException(R.string.error_illegalmapid, aId);
 	}

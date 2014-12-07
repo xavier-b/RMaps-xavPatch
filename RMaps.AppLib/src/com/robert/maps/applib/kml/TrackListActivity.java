@@ -111,6 +111,12 @@ public class TrackListActivity extends ListActivity {
 				doSaveTrack();
 			}
 		});
+		((Button) findViewById(R.id.xavTrackMenuButton))
+		.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				(TrackListActivity.this).openOptionsMenu();
+			}
+		});
 		
 		SharedPreferences settings = getPreferences(Activity.MODE_PRIVATE);
 		final int versionDataUpdate = settings.getInt("versionDataUpdate", 0);

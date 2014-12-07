@@ -30,6 +30,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/btn_stop" />
+        <Button
+            android:id="@+id/xavTrackMenuButton"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_xav_track_menu" />
     </LinearLayout>
 
     <FrameLayout

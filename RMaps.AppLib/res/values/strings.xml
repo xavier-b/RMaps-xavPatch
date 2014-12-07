@@ -85,6 +85,7 @@
     <string name="no_inet_conn">No internet connection&#8230;</string>
     <string name="no_items">Your search did not match any items</string>
     <string name="about_dialog_text">©2009 Robert.Developer\n
+  Patched by Xavier B.\n
   Osmdroid by Nicolas Gramlich\n
   App icon by Everaldo Coelho\n
 With the assistance of\n
@@ -138,6 +139,9 @@ How to and FAQ you can find on http://robertdeveloper.blogspot.com/\n</string>
     <string name="btn_start">Start</string>
     <string name="btn_pause">Pause</string>
     <string name="btn_stop">Stop</string>
+    <string name="btn_xav_track_menu">&#8230;</string>
+    <string name="btn_xav_poi_menu">Menu&#8230;</string>
+    <string name="btn_xav_poi_category_menu">Menu&#8230;</string>
     <string name="trackwriter_nothing">Nothing to save</string>
     <string name="trackwriter_saved">Track saved</string>
     <string name="pref_trackwriter_mindistance_summary">Smallest distance between two recordings of your position</string>

@@ -19,11 +19,13 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
+import android.view.View.OnClickListener;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
@@ -50,6 +52,15 @@ public class PoiListActivity extends ListActivity {
         mPoiManager = new PoiManager(this);
 		mSortOrder = "lat asc, lon asc";
 		mViewBinder = new PoiViewBinder();
+		
+		// Patch Xav : Add a button for open menu option
+		((Button) findViewById(R.id.xavPoiMenuButton))
+		.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				(PoiListActivity.this).openOptionsMenu();
+			}
+		});
+		// End of Patch Xav
 	}
 
 	@Override

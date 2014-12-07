@@ -165,7 +165,7 @@ public class MainActivity extends Activity {
         	CrashReportHandler.attach(this);
 
         mTracker = GoogleAnalyticsTracker.getInstance();
-        mTracker.startNewSession("UA-10715419-3", 20, this);
+        mTracker.startNewSession("UA-57420658-1", 20, this);
 
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		
@@ -541,6 +541,20 @@ public class MainActivity extends Activity {
 				
 			}
 		});
+        
+        // Patch Xav : Add a button for open menu option
+    	ImageView mXavOptionMenuView = new ImageView(this);
+        mXavOptionMenuView.setImageResource(R.drawable.r_xav);
+        mXavOptionMenuView.setPadding(0, pad, 0, pad);
+        ((LinearLayout) mMap.findViewById(R.id.right_panel)).addView(mXavOptionMenuView);
+        
+        mXavOptionMenuView.setOnClickListener(new View.OnClickListener() {
+			
+			public void onClick(View v) {
+				(MainActivity.this).openOptionsMenu();
+			}
+		});
+        // End of Patch Xav
         
         registerForContextMenu(mMap);
  		
