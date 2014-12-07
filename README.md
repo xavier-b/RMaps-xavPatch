@@ -1,3 +1,7 @@
+##RMaps-xavPatch
+========================
+![logo](http://s21.postimg.org/gvdbho9l3/titre.png)
+
 RMaps-xavPatch is a fork from RMaps project (http://robertdeveloper.blogspot.fr/2009/08/rmaps.html).
 
 ### Why fork RMaps ?
