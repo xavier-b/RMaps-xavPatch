@@ -19,6 +19,15 @@ This fork patch the version 0.9.4.1 (svn revision r703) for have an application 
 <br/>
 <a href='http://postimage.org/' target='_blank'><img src='http://s21.postimg.org/j394g1n5z/poi_final.png' border='0' alt="poi final" /></a><br /><a target='_blank' href='http://postimage.org/index.php?lang=french'>hebergeur d images</a><br /><br />
 
+### Installation
+On your android device, before install RMaps-xavPatch :<br/>
+<ul>
+	<li>Remove your previous version of RMaps. (Signature is not the same as RMaps official)</li>
+	<li>Check Settings->Security->unknow sources</li>
+
+</ul>
+
+
 ### License
 RMaps and RMaps-xavPatch are licensed under the [GNU GPL v3](http://www.gnu.org/licenses/gpl.html)
 
