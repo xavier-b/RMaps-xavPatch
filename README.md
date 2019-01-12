@@ -15,9 +15,9 @@ This fork patch the version 0.9.4.1 (svn revision r703) for have an application 
 
 ![main](images-doc/main-final.png)
 
-![track](images-doc/track_final.png)
+![track](images-doc/track-final.png)
 
-![poi](images-doc/poi_final.png)
+![poi](images-doc/poi-final.png)
 
 ### Installation
 On your android device, before install RMaps-xavPatch :
